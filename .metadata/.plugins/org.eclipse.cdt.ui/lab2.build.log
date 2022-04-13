@@ -1,0 +1,15 @@
+17:08:08 **** Incremental Build of configuration Debug for project lab2 ****
+make all 
+Building file: ../src/module.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++2a -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/module.d" -MT"src/module.o" -o "src/module.o" "../src/module.cpp"
+Finished building: ../src/module.cpp
+ 
+Building target: lab2
+Invoking: MacOS X C++ Linker
+g++  -o "lab2"  ./src/lab2.o ./src/module.o   
+Finished building target: lab2
+ 
+
+17:08:08 Build Finished. 0 errors, 0 warnings. (took 434ms)
+

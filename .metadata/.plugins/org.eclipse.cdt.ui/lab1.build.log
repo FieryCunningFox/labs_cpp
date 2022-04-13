@@ -1,0 +1,20 @@
+19:28:07 **** Build of configuration Debug for project lab1 ****
+make all 
+Building file: ../src/lab1.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++2a -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/lab1.d" -MT"src/lab1.o" -o "src/lab1.o" "../src/lab1.cpp"
+Finished building: ../src/lab1.cpp
+ 
+Building file: ../src/module.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++2a -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/module.d" -MT"src/module.o" -o "src/module.o" "../src/module.cpp"
+Finished building: ../src/module.cpp
+ 
+Building target: lab1
+Invoking: MacOS X C++ Linker
+g++  -o "lab1"  ./src/lab1.o ./src/module.o   
+Finished building target: lab1
+ 
+
+19:28:07 Build Finished. 0 errors, 0 warnings. (took 773ms)
+

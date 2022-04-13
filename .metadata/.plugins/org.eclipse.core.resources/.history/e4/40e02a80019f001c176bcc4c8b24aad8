@@ -1,0 +1,48 @@
+#include <iostream>
+#include <string>
+#include <fstream>
+#include <iomanip>
+
+#ifndef MODULE_H_
+#define MODULE_H_
+
+using namespace std;
+
+struct Microcontroller {
+	int artikul = 1;
+	char name[50] = "Microcontroller";
+	struct firma {
+			char name_f[50] = "IBM";
+			char town[50] = "Orel";
+	} make;
+	int rasrad = 64;
+	float takt = 100;
+	enum architecture {
+		ARM = 1,
+		X86,
+	} arch = ARM;
+	float cost = 100.99;
+	bool cost_low = false;
+};
+
+Microcontroller* add_new(Microcontroller* base, int* number);
+
+
+Microcontroller* del_item(Microcontroller* base, int* number);
+
+
+void show_elements(Microcontroller* base, const int number);
+
+void inf_firm(Microcontroller* base, const int number);
+
+
+void count_arch_low(Microcontroller* base, const int number);
+
+
+inline Microcontroller* save_file(Microcontroller* base, int* number);
+
+
+inline Microcontroller* read_file_el(Microcontroller* base, int* number);
+
+
+#endif /* MODULE_H_ */
